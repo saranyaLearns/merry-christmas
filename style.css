@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('snow.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wish{
+    color: rgb(208, 218, 236);
+    font-size: 7em;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px black;
+}
+@media screen and (max-width: 768px) {
+    .wish{
+        font-size: 3.5em;
+    }
+    .countdown div{
+        width: 50px;
+        height: 50px;
+        font-size: 2.5em;
+        display: inline-flex;
+    }
+}
+.countdown{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.countdown div{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 3em;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(13, 46, 190);
+    background-color: aliceblue;
+    box-shadow: 0 5px 3px white;
+    color: rgb(13, 46, 190);
+    text-shadow: 2px 2px black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.countdown div h1{
+    font-size: 0.3em;
+    color: rgb(13, 46, 190);
+    text-shadow: 0 0 4px rgb(241, 236, 236);
+}
+
+
+
